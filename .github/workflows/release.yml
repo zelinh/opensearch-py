@@ -1,10 +1,10 @@
 ---
-jobs:
-  on:
-    push:
-      # Pattern matched against refs/tags
-      tags:
-        - '*'           # Push events to every tag not containing /
+names: release
+on:
+  push:
+    # Pattern matched against refs/tags
+    tags:
+      - '*'           # Push events to every tag not containing /
 
   release-build:
 #    runs-on: opensearchstaging/ci-runner:release-centos7-clients-v4
