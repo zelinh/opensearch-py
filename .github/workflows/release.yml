@@ -1,5 +1,6 @@
 ---
-names: release
+name: release
+
 on:
   push:
     # Pattern matched against refs/tags
