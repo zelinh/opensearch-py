@@ -6,6 +6,7 @@ on:
     tags:
       - '*'           # Push events to every tag not containing /
 
+jobs:
   release-build:
 #    runs-on: opensearchstaging/ci-runner:release-centos7-clients-v4
     runs-on: ubuntu-latest
