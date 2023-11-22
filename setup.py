@@ -31,9 +31,9 @@ from os.path import abspath, dirname, join
 
 from setuptools import find_packages, setup
 
-package_name = "hzl-ospy"
-package_version = ""
-base_dir = abspath(dirname(__file__))
+PACKAGE_NAME = "hzl-ospy"
+PACKAGE_VERSION = ""
+BASE_DIR = abspath(dirname(__file__))
 
 with open(join(BASE_DIR, PACKAGE_NAME.replace("-", ""), "_version.py")) as f:
     data = f.read()
