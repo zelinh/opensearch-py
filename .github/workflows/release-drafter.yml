@@ -32,7 +32,6 @@ jobs:
       - name: Build project for distribution
         run: |
           python -m build
-          tar -zvcf artifacts.tar.gz dist
       - name: upload windows dists
         uses: actions/upload-artifact@v3
         with:
@@ -51,9 +50,9 @@ jobs:
         with:
           name: release-dists
           path: dist
-#      - name: Generate the artifacts
-#          run: |
-#            tar -zvcf artifacts.tar.gz dist
+      - name: Generate the artifacts
+          run: |
+            tar -zvcf artifacts.tar.gz dist
       - name: Publish release distributions to TestPyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
